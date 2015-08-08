@@ -32,7 +32,7 @@ if (typeName _projectile == "OBJECT") then {
 };
 
 // If the damage is being weird, we just tell it to fuck off.
-if !(_selection in (GVAR(SELECTIONS) + [""])) exitWith {0};
+if !(_selection in (GVAR(SELECTIONS) /*+ [""]*/)) exitWith {0};
 
 // Exit if we disable damage temporarily
 _damageOld = damage _unit;
